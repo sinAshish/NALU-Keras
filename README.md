@@ -28,5 +28,5 @@ larger purple subcell) operates in log space and is therefore capable of learnin
 storing its results in m:
 ```
 NAC : a = Wx                      W = tanh(Wˆ )  σ(Mˆ )
-NALU:  y = g  a + (1 − g)  m    m = expW(log(|x| + )), g = σ(Gx)
+NALU:  y = g  a + (1 − g)  m    m = expW(log(|x| + epsilon)), g = σ(Gx)
 ```
