@@ -27,6 +27,6 @@ operations; it is computed identically to the original NAC, (i.e., a = Wx). The 
 larger purple subcell) operates in log space and is therefore capable of learning to multiply and divide,
 storing its results in m:
 ```
-NAC : a = Wx                      W = tanh(Wˆ )  σ(Mˆ )
-NALU:  y = g  a + (1 − g)  m    m = expW(log(|x| + epsilon)), g = σ(Gx)
+NAC : a = Wx                      W = tanh(Wˆ ) * σ(Mˆ )
+NALU:  y = g * a + (1 − g) * m    m = exp W(log(|x| + epsilon)), g = σ(Gx)
 ```
