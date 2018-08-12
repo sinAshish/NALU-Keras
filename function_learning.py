@@ -60,7 +60,7 @@ if __name__=='__main__':
 		(X_train,Y_train),(X_val,Y_val) = get_data(2 ** 16,arithmetic_functions[op])
 		k.set_value(m.optimizer.lr, 1e-2)
 		m.fit(X_train, Y_train, validation_data=(X_val, Y_val), batch_size=1024, epochs=200)
-    	k.set_value(m.optimizer.lr, 1e-3)
+		k.set_value(m.optimizer.lr, 1e-3)
 		m.fit(X_train, Y_train, validation_data=(X_val, Y_val), batch_size=1024, epochs=200)
 		k.set_value(m.optimizer.lr, 1e-4)
 		m.fit(X_train, Y_train, validation_data=(X_val, Y_val), batch_size=1024, epochs=200)
